@@ -12,11 +12,18 @@ public class SettingsMenu : MonoBehaviour
 
     private void Start()
     {
+        // Create list of resolutions
         List<string> listOption = new List<string>();
         resolutions = Screen.resolutions;
         // Clear the resolutions on the dropdown list
         resolutionList.ClearOptions();
 
+        // For each resolution element, add to the dropdown list of resolutions
+        for (int i = 0; i < resolutions.Length; i++)
+        {
+            string resOption = resolutions[i].width + "x" + resolutions[i].height;
+            listOption.Add(resOption);
+        }
     }
     public void ControlVolume(float volume)
     {   
