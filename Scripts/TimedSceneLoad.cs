@@ -7,7 +7,7 @@ public class TimedSceneLoad : MonoBehaviour
 {
     public CanvasGroup canvasgroup;
     [SerializeField]
-    public float timerDelay = 44f;
+    public float timerDelay = 55f;
     [SerializeField]
     public string sceneLoad;
     private float timeElapsed;
