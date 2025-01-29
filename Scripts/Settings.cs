@@ -46,7 +46,7 @@ public class SettingsMenu : MonoBehaviour
         Resolution resolution = resolutions[setResolution];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
     }
-    public void VolumeConrol(float volume)
+    public void VolumeControl(float volume)
     {   
         // Set game volume in options menu to the value in the options menu slider
         audioControl.SetFloat("VolumeControl", volume);
